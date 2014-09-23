@@ -29,7 +29,7 @@ main = xmonad $ defaultConfig
      }
      `additionalKeysP`
      [ ("C-M-l", spawn "xscreensaver-command --lock")
-     , ("<F1>", spawn "dmenu_run -b")
+     , ("<F1>", spawn "yeganesh -x | sh")
      , ("<F8>", lowerVolume 4 >>= roundedAlert)
      , ("<F9>", raiseVolume 4 >>= roundedAlert)
      , ("<F4>", (io time) >>= alert)
